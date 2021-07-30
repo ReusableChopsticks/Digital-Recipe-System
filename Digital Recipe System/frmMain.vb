@@ -114,6 +114,6 @@ Public Class frmMain
     End Sub
 
     Private Sub btnSort_Click(sender As Object, e As EventArgs) Handles btnSort.Click
-
+        SortArray()
     End Sub
 End Class
