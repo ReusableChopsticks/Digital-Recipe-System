@@ -13,7 +13,7 @@ Public Class frmMain
 
     'Uses openfiledialogue to open a file on the user's system and adds the information in the file to recipes.xml
     Private Sub UploadFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UploadFileToolStripMenuItem.Click
-        'Copy the current file contents to a temporary array
+        'Copy the current file contents to a temporary array so that it can be added onto the newly read data later
         ReadFile("recipes.xml")
         Dim arrCopy(arrMyRecipes.Length - 1) As MyRecipes
         Array.Copy(arrMyRecipes, arrCopy, arrMyRecipes.Length)
@@ -26,7 +26,7 @@ Public Class frmMain
             ReadFile(strFileName) 'Read the selected file into the array
 
             intIndex = arrMyRecipes.Count 'Resets intIndex for the new array
-            For Each recipe In arrCopy 'Adds all of the original file data onto the newly read data
+            For Each recipe In arrCopy 'Adds all of the original file data onto the newly read data in the array
                 Try
                     arrMyRecipes(intIndex).strRecipeTitle = recipe.strRecipeTitle
                     arrMyRecipes(intIndex).strIngredients = recipe.strIngredients
@@ -63,6 +63,7 @@ Public Class frmMain
             Dim title_search As String = txtSearch.Text 'Stores the string that the user wants to search with
             Dim tag As String 'Used by the search function to determine if a recipe matches the tags selected when the user searches
 
+            'Records the tag chosen by the user to be used in the search function
             If rbDessert.Checked Then
                 tag = "dessert"
             ElseIf rbDinner.Checked Then
@@ -114,6 +115,12 @@ Public Class frmMain
     End Sub
 
     Private Sub btnSort_Click(sender As Object, e As EventArgs) Handles btnSort.Click
-        SortArray()
+        ReadFile("recipes.xml") 'Reads the file and loads the array
+        SortArray(0, arrMyRecipes.Length - 1) 'Does a quick sort of each element in arrMyRecipes by alphabetical order (kinda), done by comparing ASCII values of the first character of the recipe name
+        lsbResults.Items.Clear() 'Clears the listbox to allow for the sorted array to be displayed
+        'Displays sorted array in the results listbox
+        For Each recipe In arrMyRecipes
+            lsbResults.Items.Add(recipe.strRecipeTitle)
+        Next
     End Sub
 End Class

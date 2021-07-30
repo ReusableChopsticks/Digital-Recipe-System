@@ -3,6 +3,7 @@
 'Purpose: Displays the recipe that the user selected and allows them to delete and edit them.
 
 Public Class frmRecipe
+    'Whenever the form is opened by a user double clicking a recipe, display the recipe details
     Private Sub frmRecipe_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         Dim recipe As MyRecipes = Array.Find(arrMyRecipes, Function(x) x.strRecipeTitle.Equals(strSelectedRecipe))
         lblRecipeName.Text = recipe.strRecipeTitle
@@ -27,6 +28,7 @@ Public Class frmRecipe
         Hide() 'Hides the form
     End Sub
 
+    'Uses an InputBox to allow the user to change the name of the recipe
     Private Sub btnChangeName_Click(sender As Object, e As EventArgs) Handles btnChangeName.Click
         Dim strNewName As String = InputBox("Enter a new name for this recipe:")
 
@@ -50,34 +52,38 @@ Public Class frmRecipe
         strSelectedRecipe = arrMyRecipes(intSelectedRecipeIndex).strRecipeTitle 'Update the global variable accordingly
     End Sub
 
-    'Deletes this recipe from the file when clicked
+    'Deletes the current recipe from the file when clicked
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        Dim intIndex As Integer = 0
-        Dim arrDeleted(0) As MyRecipes 'A temporary array
-        For Each recipe In arrMyRecipes
-            If recipe.strRecipeTitle <> strSelectedRecipe Then 'Only add the recipe into the array if it has not been deleted
-                Try
-                    arrDeleted(intIndex) = recipe
-                    intIndex += 1
-                Catch ex As Exception
-                    ReDim Preserve arrDeleted(arrDeleted.Length)
-                    arrDeleted(intIndex) = recipe
-                    intIndex += 1
-                End Try
-            End If
-        Next
-        ReDim arrMyRecipes(arrDeleted.Length - 1)
-        Array.Copy(arrDeleted, arrMyRecipes, arrDeleted.Length) 'Copy this edited array to the original array
-        WriteFile() 'Write this new array to the file
+        Dim confirm = MsgBox("Are you sure you want to delete this recipe?", vbQuestion + vbYesNo + vbDefaultButton2) 'Double check if the user wants to delete the recipe for usability
 
-        'Prepare the form for next use and close it (because the recipe has been deleted, there is nothing left to view)
-        btnBack.Enabled = True
-        btnEdit.Enabled = True
-        btnChangeName.Visible = False
-        btnDelete.Visible = False
-        btnSave.Visible = False
-        frmMain.lsbResults.Items.Clear() 'Clear the results listbox so that the deleted recipe is not displayed anymore
-        Me.Hide()
+        If confirm = vbYes Then 'If the user confirms that they want to delete the recipe
+            Dim intIndex As Integer = 0
+            Dim arrDeleted(0) As MyRecipes 'A temporary array which will exclude the deleted item
+            For Each recipe In arrMyRecipes
+                If recipe.strRecipeTitle <> strSelectedRecipe Then 'Only add the recipe into the array if it has not been deleted
+                    Try
+                        arrDeleted(intIndex) = recipe
+                        intIndex += 1
+                    Catch ex As Exception
+                        ReDim Preserve arrDeleted(arrDeleted.Length)
+                        arrDeleted(intIndex) = recipe
+                        intIndex += 1
+                    End Try
+                End If
+            Next
+            ReDim arrMyRecipes(arrDeleted.Length - 1)
+            Array.Copy(arrDeleted, arrMyRecipes, arrDeleted.Length) 'Copy this edited array to the original array
+            WriteFile() 'Write this new array to the file
+
+            'Prepare the form for next use and close it (because the recipe has been deleted, there is nothing left to view)
+            btnBack.Enabled = True
+            btnEdit.Enabled = True
+            btnChangeName.Visible = False
+            btnDelete.Visible = False
+            btnSave.Visible = False
+            frmMain.lsbResults.Items.Clear() 'Clear the results listbox so that the deleted recipe is not displayed anymore
+            Me.Hide()
+        End If
     End Sub
 
     'Validates changes made to ingredients and method, then saves these to the file
@@ -112,19 +118,22 @@ Public Class frmRecipe
                     arrMyRecipes(intSelectedRecipeIndex).strMethod = strNewMethod
                 End Try
             Else
-                MsgBox("Please keep recipe ingredients below 10000 characters.")
+                MsgBox("Please keep recipe ingredients below 10000 characters.") 'Notify user of why their data was invalid
             End If
         Else
-            MsgBox("Please input new ingredients for this recipe.")
+            MsgBox("Please input new ingredients for this recipe.") 'Notify user of why their data was invalid
         End If
 
         WriteFile() 'Save these changes to the file
         frmMain.lsbResults.Items.Clear() 'Clears the search results so data is not outdated
 
+        'Reset all of the buttons and textboxes back to normal for viewing purposes
         btnBack.Enabled = True
         btnEdit.Enabled = True
         btnChangeName.Visible = False
         btnDelete.Visible = False
         btnSave.Visible = False
+        txtIngredients.ReadOnly = True
+        txtMethod.ReadOnly = True
     End Sub
 End Class

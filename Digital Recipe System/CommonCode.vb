@@ -1,6 +1,6 @@
 ﻿Imports System.Xml
 
-'A module for public functions used throughout the entire solution
+'Purpose: A module for public functions and procedures used throughout the entire solution
 Module CommonCode
 
     'Saves the contents of recipes.xml into an array
@@ -121,9 +121,43 @@ Module CommonCode
         End If
     End Sub
 
-    'Sorts arrMyRecipes by ASCII values
-    Public Sub SortArray()
+    'Sorts arrMyRecipes alphabetically by the ASCII value of the first character in the recipe name using a quick sort algorithm
+    Public Sub SortArray(ByVal intLowEnd As Integer, ByVal intHighEnd As Integer)
         'WIP
+        If intLowEnd < intHighEnd Then
+            'Figure out where to split the array (what index value)
+            Dim split = PartitionArray(intLowEnd, intHighEnd)
+            'Quick sort the lower end of the split array (recursion)
+            SortArray(intLowEnd, split - 1)
+            'Quick sort the lower end of the split array (recursion)
+            SortArray(split + 1, intHighEnd)
+        End If
     End Sub
 
+    'A partition function required by the SortArray procedure.
+    'Returns the low end after being incremented
+    Public Function PartitionArray(ByVal intLowEnd As Integer, ByVal intHighEnd As Integer)
+        Dim pivot = Asc(LCase(arrMyRecipes(intHighEnd).strRecipeTitle.Substring(0))) 'Set the pivot as the high end element of arrMyRecipes. Get the ASCII value of the first character of the recipe title.
+        'Convert to lower case so that upper case letters are not ordered before lower case letters due to their ASCII values.
+
+        For index As Integer = intLowEnd To intHighEnd
+            If Asc(LCase(arrMyRecipes(index).strRecipeTitle.Substring(0))) < pivot Then
+                If intLowEnd <> index Then
+                    'Swap the elements at the lower and current index position
+                    Dim swaplow = arrMyRecipes(intLowEnd)
+                    Dim swapindex = arrMyRecipes(index)
+                    arrMyRecipes(intLowEnd) = swapindex
+                    arrMyRecipes(index) = swaplow
+                End If
+                intLowEnd += 1 'Increment the low end
+            End If
+        Next
+        'Swap the elements at the high and low position
+        Dim swap1 = arrMyRecipes(intLowEnd)
+        Dim swap2 = arrMyRecipes(intHighEnd)
+        arrMyRecipes(intLowEnd) = swap2
+        arrMyRecipes(intHighEnd) = swap1
+
+        Return intLowEnd 'Returns intLowEnd to be used by QuickSort again because of recursion
+    End Function
 End Module

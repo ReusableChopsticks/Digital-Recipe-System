@@ -1,4 +1,7 @@
-﻿Module GlobalVariables
+﻿'Purpose: this module stores global structures and variables which are used across multiple forms
+
+Module GlobalVariables
+    'A record that stores all the necessary information the user will input about a recipe into the program
     Public Structure MyRecipes
         Public strRecipeTitle As String
         Public strIngredients As String
@@ -6,10 +9,10 @@
         Public strTag As String
     End Structure
 
-    Public intIndex As Integer = 0 'element index
-    Public arrMyRecipes(0) As MyRecipes 'array to store entered information
+    Public intIndex As Integer = 0 'Element index used to keep track of the current index of arrMyRecipes
+    Public arrMyRecipes(0) As MyRecipes 'Array to store entered recipes
 
-    'variables that are needed across frmMain and frmRecipe
+    'Variables that are needed across frmMain and frmRecipe
     Public strSelectedRecipe As String
     Public intSelectedRecipeIndex As Integer
 End Module
