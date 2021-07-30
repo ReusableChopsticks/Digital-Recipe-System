@@ -3,7 +3,7 @@
 'Author: Erick Hadi
 'Date: 11/07/2021
 'Purpose: This form can direct the user to other forms for functionality
-'         The form lets the user search for and then select recipes by their title
+'         The form lets the user search for and then select recipes by their title, then sorts it
 
 Public Class frmMain
     'Opens a new form for data input
