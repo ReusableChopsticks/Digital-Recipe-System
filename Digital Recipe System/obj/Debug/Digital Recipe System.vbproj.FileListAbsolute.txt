@@ -1,0 +1,28 @@
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.exe.config
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.exe
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.pdb
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.xml
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbprojAssemblyReference.cache
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmLogin.resources
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.Resources.resources
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbproj.GenerateResource.cache
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbproj.CoreCompileInputs.cache
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.exe
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.xml
+C:\Users\frede\OneDrive\Desktop\Pekerjaan\Komputing\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.pdb
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.exe.config
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.exe
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.pdb
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\bin\Debug\Digital Recipe System.xml
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbprojAssemblyReference.cache
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmLogin.resources
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmMain.resources
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmRecipe.resources
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmSettings.resources
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.Resources.resources
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbproj.GenerateResource.cache
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.vbproj.CoreCompileInputs.cache
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.exe
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.xml
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital Recipe System.pdb
+C:\Users\frede\OneDrive\Desktop\Digital Recipe System\Digital Recipe System\obj\Debug\Digital_Recipe_System.frmInput.resources
