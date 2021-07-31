@@ -54,13 +54,15 @@ Partial Class frmLogin
         '
         'btnCreatePassword
         '
+        Me.btnCreatePassword.BackColor = System.Drawing.Color.LightGreen
+        Me.btnCreatePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreatePassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCreatePassword.Location = New System.Drawing.Point(271, 372)
         Me.btnCreatePassword.Name = "btnCreatePassword"
         Me.btnCreatePassword.Size = New System.Drawing.Size(325, 71)
         Me.btnCreatePassword.TabIndex = 2
         Me.btnCreatePassword.Text = "Create Password"
-        Me.btnCreatePassword.UseVisualStyleBackColor = True
+        Me.btnCreatePassword.UseVisualStyleBackColor = False
         '
         'txtSetPassword
         '
@@ -82,13 +84,15 @@ Partial Class frmLogin
         '
         'btnLogin
         '
+        Me.btnLogin.BackColor = System.Drawing.Color.LightGreen
+        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.Location = New System.Drawing.Point(271, 383)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(325, 71)
         Me.btnLogin.TabIndex = 5
         Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.UseVisualStyleBackColor = False
         Me.btnLogin.Visible = False
         '
         'lblHeader

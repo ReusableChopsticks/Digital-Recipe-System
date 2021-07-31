@@ -3,49 +3,12 @@
 <Data>
   <Record>
     <RecipeTitle>Butterscotch Pie</RecipeTitle>
-    <Ingredients>Pie</Ingredients>
-    <Method>Goat Mom best mom</Method>
+    <Ingredients>Frozen Pie</Ingredients>
+    <Method>Heat up in an oven</Method>
     <Tag>dessert</Tag>
   </Record>
   <Record>
-    <RecipeTitle>i love carrots</RecipeTitle>
-    <Ingredients>carrots
-
-
-
-
-
-
-even more carrots
-
-
-
-
-
-
-
-potatoes, even???</Ingredients>
-    <Method>eat the carrots
-they are healthy
-
-
-
-
-
-
-
-
-
-they are good for dieting
-
-
-
-
-they help with eyesight</Method>
-    <Tag>lunch</Tag>
-  </Record>
-  <Record>
-    <RecipeTitle>Hot Mess</RecipeTitle>
+    <RecipeTitle>Kitchen Cabinet</RecipeTitle>
     <Ingredients>Milk
 Eggs
 Potato
@@ -82,5 +45,63 @@ Herbs
 Stock
 MSG</Method>
     <Tag>nothing</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>Nasi Goreng</RecipeTitle>
+    <Ingredients>Rice
+Kecap Manis
+Egg
+Vegetable Oil</Ingredients>
+    <Method>Combine ingredients in a wok
+Stir fry until cooked</Method>
+    <Tag>indo</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>BLT Sandwich</RecipeTitle>
+    <Ingredients>Bacon
+Bread
+Tomato
+Lettuce</Ingredients>
+    <Method>Assemble the sandwich
+Add favourite sauces</Method>
+    <Tag>lunch</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>Vegetable Soup</RecipeTitle>
+    <Ingredients>Carrots
+Chicken Stock
+Potatoes</Ingredients>
+    <Method>Boil water and stock in a pot
+Add vegetables and boil until soft</Method>
+    <Tag>dinner</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>Chocolate Chip Cookies</RecipeTitle>
+    <Ingredients>Flour
+Chocolate Chips
+Milk
+Eggs</Ingredients>
+    <Method>1. Combine ingredients in a bowl
+2. Bake in oven for 30 minutes at medium heat</Method>
+    <Tag>dessert</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>Cake</RecipeTitle>
+    <Ingredients>Cake mix
+Milk</Ingredients>
+    <Method>Combine cake mix and milk
+Bake according to instructions on packet</Method>
+    <Tag>dessert</Tag>
+  </Record>
+  <Record>
+    <RecipeTitle>Pandan Matabak</RecipeTitle>
+    <Ingredients>Pandan flavouring
+Ceres
+Cream Cheese
+Matabak Mix</Ingredients>
+    <Method>Lay mix like a pancake
+Add cheese and chocolate
+Fry in pan until cooked</Method>
+    <Tag>indo</Tag>
   </Record>
 </Data>

@@ -19,8 +19,12 @@ Public Class frmRecipe
         btnEdit.Enabled = False
         btnBack.Enabled = False
         'Allow the user to edit the text of the program
+        'Changes colour of text to indicate it is editable
         txtIngredients.ReadOnly = False
         txtMethod.ReadOnly = False
+        txtIngredients.ForeColor = Color.Blue
+        txtMethod.ForeColor = Color.Blue
+
     End Sub
 
     'Hides the form from the user when clicked
@@ -81,6 +85,8 @@ Public Class frmRecipe
             btnChangeName.Visible = False
             btnDelete.Visible = False
             btnSave.Visible = False
+            txtIngredients.ForeColor = Color.Black
+            txtMethod.ForeColor = Color.Black
             frmMain.lsbResults.Items.Clear() 'Clear the results listbox so that the deleted recipe is not displayed anymore
             Me.Hide()
         End If
@@ -135,5 +141,7 @@ Public Class frmRecipe
         btnSave.Visible = False
         txtIngredients.ReadOnly = True
         txtMethod.ReadOnly = True
+        txtIngredients.ForeColor = Color.Black
+        txtMethod.ForeColor = Color.Black
     End Sub
 End Class

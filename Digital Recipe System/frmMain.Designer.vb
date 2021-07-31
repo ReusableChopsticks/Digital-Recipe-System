@@ -83,6 +83,7 @@ Partial Class frmMain
         '
         'txtSearch
         '
+        Me.txtSearch.BackColor = System.Drawing.SystemColors.HighlightText
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.Location = New System.Drawing.Point(176, 119)
         Me.txtSearch.Name = "txtSearch"
@@ -91,10 +92,12 @@ Partial Class frmMain
         '
         'gobTags
         '
+        Me.gobTags.BackColor = System.Drawing.Color.SkyBlue
         Me.gobTags.Controls.Add(Me.rbDessert)
         Me.gobTags.Controls.Add(Me.rbIndo)
         Me.gobTags.Controls.Add(Me.rbDinner)
         Me.gobTags.Controls.Add(Me.rbLunch)
+        Me.gobTags.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.gobTags.Location = New System.Drawing.Point(58, 200)
         Me.gobTags.Name = "gobTags"
         Me.gobTags.Size = New System.Drawing.Size(808, 100)
@@ -192,30 +195,39 @@ Partial Class frmMain
         '
         'btnQuit
         '
+        Me.btnQuit.BackColor = System.Drawing.Color.LightGreen
+        Me.btnQuit.Cursor = System.Windows.Forms.Cursors.Default
+        Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Location = New System.Drawing.Point(729, 703)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(137, 57)
         Me.btnQuit.TabIndex = 6
         Me.btnQuit.Text = "Quit"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.LightGreen
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnClear.Location = New System.Drawing.Point(573, 703)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(137, 57)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnSort
         '
+        Me.btnSort.BackColor = System.Drawing.Color.LightGreen
+        Me.btnSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSort.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnSort.Location = New System.Drawing.Point(414, 703)
         Me.btnSort.Name = "btnSort"
         Me.btnSort.Size = New System.Drawing.Size(137, 57)
         Me.btnSort.TabIndex = 8
         Me.btnSort.Text = "Sort"
-        Me.btnSort.UseVisualStyleBackColor = True
+        Me.btnSort.UseVisualStyleBackColor = False
         '
         'frmMain
         '

@@ -95,20 +95,24 @@ Partial Class frmInput
         '
         'btnAdd
         '
+        Me.btnAdd.BackColor = System.Drawing.Color.LightGreen
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(775, 412)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(302, 171)
         Me.btnAdd.TabIndex = 12
         Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.SkyBlue
         Me.GroupBox1.Controls.Add(Me.rbDessert)
         Me.GroupBox1.Controls.Add(Me.rbIndo)
         Me.GroupBox1.Controls.Add(Me.rbDinner)
         Me.GroupBox1.Controls.Add(Me.rbLunch)
+        Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Location = New System.Drawing.Point(775, 100)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(302, 272)
@@ -165,13 +169,15 @@ Partial Class frmInput
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.LightGreen
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(775, 604)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(302, 73)
         Me.btnExit.TabIndex = 14
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmInput
         '

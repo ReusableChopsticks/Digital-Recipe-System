@@ -46,7 +46,8 @@ Partial Class frmRecipe
         '
         'txtIngredients
         '
-        Me.txtIngredients.BackColor = System.Drawing.SystemColors.Control
+        Me.txtIngredients.BackColor = System.Drawing.Color.White
+        Me.txtIngredients.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txtIngredients.Location = New System.Drawing.Point(55, 156)
         Me.txtIngredients.Multiline = True
         Me.txtIngredients.Name = "txtIngredients"
@@ -56,39 +57,45 @@ Partial Class frmRecipe
         '
         'btnSave
         '
+        Me.btnSave.BackColor = System.Drawing.Color.LightGreen
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.Location = New System.Drawing.Point(453, 681)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(360, 58)
         Me.btnSave.TabIndex = 4
         Me.btnSave.Text = "Save Changes"
-        Me.btnSave.UseVisualStyleBackColor = True
+        Me.btnSave.UseVisualStyleBackColor = False
         Me.btnSave.Visible = False
         '
         'btnDelete
         '
+        Me.btnDelete.BackColor = System.Drawing.Color.LightGreen
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(55, 681)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(375, 58)
         Me.btnDelete.TabIndex = 5
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         Me.btnDelete.Visible = False
         '
         'btnBack
         '
+        Me.btnBack.BackColor = System.Drawing.Color.LightGreen
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.Location = New System.Drawing.Point(704, 590)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(109, 73)
         Me.btnBack.TabIndex = 6
         Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = True
+        Me.btnBack.UseVisualStyleBackColor = False
         '
         'txtMethod
         '
-        Me.txtMethod.BackColor = System.Drawing.SystemColors.Control
+        Me.txtMethod.BackColor = System.Drawing.Color.White
         Me.txtMethod.Location = New System.Drawing.Point(316, 156)
         Me.txtMethod.Multiline = True
         Me.txtMethod.Name = "txtMethod"
@@ -118,23 +125,27 @@ Partial Class frmRecipe
         '
         'btnChangeName
         '
+        Me.btnChangeName.BackColor = System.Drawing.Color.LightGreen
+        Me.btnChangeName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnChangeName.Location = New System.Drawing.Point(681, 44)
         Me.btnChangeName.Name = "btnChangeName"
         Me.btnChangeName.Size = New System.Drawing.Size(132, 37)
         Me.btnChangeName.TabIndex = 10
         Me.btnChangeName.Text = "Change Name"
-        Me.btnChangeName.UseVisualStyleBackColor = True
+        Me.btnChangeName.UseVisualStyleBackColor = False
         Me.btnChangeName.Visible = False
         '
         'btnEdit
         '
+        Me.btnEdit.BackColor = System.Drawing.Color.LightGreen
+        Me.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.Location = New System.Drawing.Point(55, 590)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(630, 73)
         Me.btnEdit.TabIndex = 11
         Me.btnEdit.Text = "Edit"
-        Me.btnEdit.UseVisualStyleBackColor = True
+        Me.btnEdit.UseVisualStyleBackColor = False
         '
         'frmRecipe
         '

@@ -8,7 +8,7 @@ Public Class frmLogin
     'Sets up the login form according to if the user has opened the app for the first time or not
     Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If password.Length <> 0 Then 'If this is not the first time the user has opened the application
-            'Change some text and hide some elements. Basically, I am reusing this same form instead of creating a different form because it is easier to do
+            'Change some text and hide some elements. Basically, I am reusing this same form instead of creating a different form because it is easier to do (more efficient)
             lblConfirmPassword.Text = "Enter Password: "
             lblSetPassword.Visible = False
             txtSetPassword.Visible = False
@@ -22,9 +22,9 @@ Public Class frmLogin
         'Validate if the password exists and if the user successfully confirmed their password
         If txtSetPassword.Text = "" Or txtConfirmPassword.Text = "" Then
             MsgBox("Please fill in the required field(s).")
-        ElseIf txtSetPassword.Text.Length > 30 Then
-            MsgBox("Password is too long. Please enter a shorter password (less than 30 characters)")
-        ElseIf txtConfirmPassword.Text <> txtSetPassword.Text Then
+        ElseIf txtSetPassword.Text.Length < 6 Or txtSetPassword.Text.Length > 30 Then 'Validate the range of the password. It should not be too short or too long
+            MsgBox("Password out of acceptable range. Please enter a password between 6 and 30 characters.")
+        ElseIf txtConfirmPassword.Text <> txtSetPassword.Text Then 'If the two passwords do not match
             'Prompt password re-entry and clear textboxes
             MsgBox("Passwords do not match. Please try again.")
             txtSetPassword.Clear()
